@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logos Blog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div class="banner"></div>
+	</header>
+	<main class="container">
+		<h1>Welcome to your blog!</h1>
+		<p>you are free to create</p>
+		<div class="form-wrapper">
+			<form action="register.php" method="post">
+				<fieldset>
+					<legend>let's sign up!</legend>
+					<div>
+						<label for="username">Username:</label>
+						<input type="text" id="username" name="username" required minlength="4" maxlength="20" pattern="[a-z0-9]+">
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					  </div>
+					  
+					<div>
+						<label for="password">Password:</label>
+						<input type="password" id="password" name="password" required minlength="6" maxlength="100" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9\W]).+$">
+					</div>
+					<div>
+						<label for="confirm-password">Confirm Password:</label>
+						<input type="password" id="confirm-password" name="confirm-password" required minlength="6" maxlength="100" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9\W]).+$">
+					</div>
+					<div>
+						<input type="submit" value="Register">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</main>
+</body>
+</html>

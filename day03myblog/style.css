@@ -1,0 +1,101 @@
+/* new user registration ---------------------------- */ 
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('images/background.png');
+	background-repeat: repeat;
+    background-color: #f0f0f0;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header {
+	background-image: url('images/banner.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	height: 150px;
+	width: 960px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 36px;
+	color: #333;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: #666;
+}
+
+.error {
+	background-color: #ff0000;
+	color: #f0f0f0;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+legend {
+    font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: #666;
+}
+
+form {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	padding: 20px;
+}
+
+form label {
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color:#666;
+	margin-bottom: 10px;
+}
+
+form input[type=text], form input[type=password], form input[type=email] {
+	width: 30%;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	margin-bottom: 15px;
+}
+
+form input[type=submit] {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+form input[type=submit]:hover {
+	background-color: #555;
+}
+
+form div {
+    margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.success {
+	background-color: #00ff00;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}

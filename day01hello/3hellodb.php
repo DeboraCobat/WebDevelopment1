@@ -4,21 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hello Database!</title>
 </head>
 <body>
     
 <?php
 
-$dbName = 'day01';
-$dbUser = 'day01';
-$dbPass = 'Y9JG1j5m_7z[8pgp';
-$dbHost = 'localhost'; // 127.0.0.1
-
-$link = @mysqli_connect($dbHost, $dbUser, $dbPass, $dbName);
-if (mysqli_connect_errno()) {
-    die("Fatal error: failed to connect to MySQL - " . mysqli_connect_error());
-}
+require_once('db.php');
 
 if (isset($_GET["name"])) {
     $name = $_GET["name"];
@@ -37,4 +29,4 @@ if (isset($_GET["name"])) {
 ?>
 
 </body>
-</html>
+</html> 
